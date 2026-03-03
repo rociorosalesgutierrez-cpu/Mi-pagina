@@ -1,0 +1,157 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: "Sue Ellen Francisco", cursive;
+    background: #f9f5ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* FORMAS DECORATIVAS DE FONDO */
+body::before {
+    content: "";
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    background: #c77dff;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    right: -150px;
+    width: 500px;
+    height: 500px;
+    background: #ff8fab;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+/* HEADER CON FORMA CURVA */
+header {
+    background: linear-gradient(135deg, #8e2de2, #ff8fab);
+    color: white;
+    padding: 40px 20px 70px 20px;
+    text-align: center;
+    clip-path: ellipse(100% 85% at 50% 15%);
+}
+
+/* BRAND */
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+}
+
+h1 {
+    font-family: "Joti One", serif;
+    font-size: 32px;
+}
+
+/* NAV */
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #8e2de2;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    padding: 80px 20px 50px 20px;
+}
+
+/* CONTENEDOR */
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARDS INCLINADAS */
+.card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 30px 10px 30px 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
+    transition: 0.4s ease;
+}
+
+/* Hover endereza y eleva */
+.card:hover {
+    transform: rotate(0deg) translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    font-family: "Joti One", serif;
+    font-size: 24px;
+    color: #8e2de2;
+}
+
+/* FOOTER */
+footer {
+    background: #8e2de2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+
+    .brand {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .card {
+        transform: none;
+    }
+}

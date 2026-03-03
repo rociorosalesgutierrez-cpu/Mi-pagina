@@ -1,0 +1,138 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: "Sue Ellen Francisco", cursive;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* LOGO + TITULO */
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 85px;
+}
+
+h1 {
+    font-family: "Joti One", serif;
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+/* NAV */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+/* Hover efecto glow */
+nav ul li a:hover {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    box-shadow: 0 0 15px #00c6ff;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    padding: 60px 20px;
+}
+
+/* CONTENEDOR */
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CARDS GLASS */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: 0.4s ease;
+}
+
+/* Hover con brillo */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
+}
+
+.card h2 {
+    font-family: "Joti One", serif;
+    font-size: 26px;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    padding: 18px;
+    font-size: 18px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+
+    .brand {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+}

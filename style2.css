@@ -1,0 +1,156 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: "Sue Ellen Francisco", cursive;
+    background: #f4f6fb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* LINEAS DECORATIVAS */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: repeating-linear-gradient(
+        45deg,
+        #e0c3fc,
+        #e0c3fc 10px,
+        #f9f5ff 10px,
+        #f9f5ff 20px
+    );
+    z-index: -1;
+}
+
+/* HEADER DIAGONAL */
+header {
+    background: linear-gradient(120deg, #8e2de2, #4a00e0);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+/* BRAND */
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+}
+
+h1 {
+    font-family: "Joti One", serif;
+    font-size: 30px;
+}
+
+/* NAV */
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #4a00e0;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    padding: 100px 20px 60px 20px;
+}
+
+/* CONTENEDOR */
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARDS HEXAGONALES */
+.card {
+    background: linear-gradient(135deg, #ffffff, #f0e6ff);
+    padding: 50px 20px;
+    text-align: center;
+    clip-path: polygon(
+        25% 0%, 
+        75% 0%, 
+        100% 50%, 
+        75% 100%, 
+        25% 100%, 
+        0% 50%
+    );
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Hover efecto zoom */
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    font-family: "Joti One", serif;
+    font-size: 22px;
+    color: #4a00e0;
+}
+
+/* FOOTER */
+footer {
+    background: #4a00e0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+
+    .brand {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .card {
+        clip-path: none;
+        border-radius: 20px;
+    }
+}
