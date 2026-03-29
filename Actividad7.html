@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carousel</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    /* Pantalla completa */
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+      height: 100vh;
+    }
+
+    .carousel-item img {
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    /* Texto negro con fondo */
+    .carousel-caption {
+      color: black;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .navbar-custom{
+      background: #000;
+      padding: 15px 40px;
+    }
+
+    .navbar-brand{
+      color: #fff !important;
+      font-weight: bold;
+      font-size: 26px;
+    }
+
+    .nav-link{
+      color: #ccc !important;
+      margin-left: 15px;
+      transition: 0.3s;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">ACTIVIDAD 7</a>
+
+    <button class="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Perfil</a>
+        </li>
+
+        
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Bimestre 1
+          </a>
+          <ul class="dropdown-menu bg-dark ">
+             <li><a class="dropdown-item text-light" href="Actividad1.html">Actividad 1</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad2.html">Actividad 2</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad3.html">Actividad 3</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad4.html">Actividad 4</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad5.html">Actividad 5</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad6.html">Actividad 6</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad7.html">Actividad 7</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad8.html">Actividad 8</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad9.html">Actividad 9</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad10.html">Actividad 10</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="bimestre2.html">Bimestre 2</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="bimestre3.html ">Bimestre 3</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="bimestre4.html">Bimestre 4</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+<!-- CAROUSEL -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- indicadores -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"></button>
+  </div>
+
+  <!-- imágenes -->
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="img.jpg" class="d-block w-100">
+      <div class="carousel-caption text-start">
+        <h1>Monsters University</h1>
+        <p>No necesitas ser perfecto para lograrlo</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img2.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h1>Bob Esponja</h1>
+        <p>Viviendo bajo el mar todo es mejor</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img3.jpg" class="d-block w-100">
+      <div class="carousel-caption text-end">
+        <h1>Lluvia de hamburguesas</h1>
+        <p>Donde hasta las frutillas son gigantes</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img4.jpg" class="d-block w-100">
+      <div class="carousel-caption text-end">
+        <h1>Lluvia de hamburguesas</h1>
+        <p>Cuando el hambre cae… caen hamburguesas.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img5.jpg" class="d-block w-100">
+      <div class="carousel-caption text-end">
+        <h1>Zootopia</h1>
+        <p>En Zootopia, cualquiera puede ser lo que quiera ser</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- botones -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

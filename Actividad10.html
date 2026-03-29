@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROGRESO</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+  background:#61879e;
+}
+
+/* estilo moderno */
+.progress{
+  height: 12px;
+  border-radius: 10px;
+  background-color: #e9ecef;
+}
+
+.progress-bar{
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.navbar-custom{
+  background: #000;
+  padding: 15px 40px;
+}
+
+.navbar-brand{
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.nav-link{
+  color: #ccc !important;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">ACTIVIDAD 10</a>
+
+    <button class="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Perfil</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Bimestre 1
+          </a>
+          <ul class="dropdown-menu bg-dark ">
+             <li><a class="dropdown-item text-light" href="Actividad1.html">Actividad 1</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad2.html">Actividad 2</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad3.html">Actividad 3</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad4.html">Actividad 4</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad5.html">Actividad 5</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad6.html">Actividad 6</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad7.html">Actividad 7</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad8.html">Actividad 8</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad9.html">Actividad 9</a></li>
+              <li><a class="dropdown-item text-light" href="Actividad10.html">Actividad 10</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="bimestre2.html">Bimestre 2</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="bimestre3.html ">Bimestre 3</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="bimestre4.html">Bimestre 4</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<div class="container py-5">
+  <h2 class="mb-4">Progreso</h2>
+
+  <!-- Barra básica -->
+  <div class="mb-4">
+    <label>Progreso básico</label>
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%"></div>
+    </div>
+  </div>
+
+  <!-- Con porcentaje -->
+  <div class="mb-4">
+    <label>Con porcentaje</label>
+    <div class="progress">
+      <div class="progress-bar" style="width: 70%">70%</div>
+    </div>
+  </div>
+
+  <!-- Animada -->
+  <div class="mb-4">
+    <label>Animada</label>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+    </div>
+  </div>
+
+  <!-- Varias barras -->
+  <div class="mb-4">
+    <label>Múltiple</label>
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width: 30%"></div>
+      <div class="progress-bar bg-warning" style="width: 20%"></div>
+      <div class="progress-bar bg-danger" style="width: 10%"></div>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Bootstrap JS (necesario para collapse y dropdown) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
